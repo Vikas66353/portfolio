@@ -1,6 +1,6 @@
 import "./About.css";
-import { Carousel } from "antd";
 import DataCard from "./DataCard/DataCard";
+// import resume from "./Assets/files/vikasMishra-resume.pdf";
 
 const About = () => {
   return (
@@ -11,12 +11,22 @@ const About = () => {
           <div className="aboutImg">
             <div className="profileImg">
               <div className="profileCircle">
-                <img src="./Assets/profilePic.jpg" className="profilePic" atl="profile pic" />
+                <img
+                  src="./Assets/1image.jpeg"
+                  className="profilePic"
+                  atl="profile pic"
+                />
               </div>
             </div>
             <div className="profileDesc">
               Masters In Computer Application
-              <button className="prmButton">Download Resume</button>
+              <a
+                href="./Assets/files/vikasMishra-resume.pdf"
+                download="resume"
+                target="_blank"
+              >
+                <button className="prmButton">Download Resume</button>
+              </a>
             </div>
           </div>
           <div className="aboutStatus">
@@ -27,7 +37,8 @@ const About = () => {
               <span className="ml">Summary</span>
             </div>
             <div className="aboutSummary">
-              Hey! This is Vikas MIshra I am grateful that you visited my profile 
+              Hey! This is Vikas MIshra I am grateful that you visited my
+              profile
             </div>
           </div>
         </div>
