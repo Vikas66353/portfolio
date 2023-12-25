@@ -1,0 +1,128 @@
+.navContainer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: blueviolet;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    visibility: visible;
+}
+
+.hamMenu{
+    width: 40px;
+    height: 40px;
+    visibility: hidden;
+}
+
+.headerText{
+    color: white;
+    font-family: Quicksand;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.navLeft{
+    flex:3;
+    text-align: center;
+    margin-left: 30px;
+}
+.navMid{
+    flex:4;
+}
+.navRight{
+    flex:6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.btnMenu{
+    height: 50px;
+    padding: 10px;
+    width: max-content;
+    max-width: 120px;
+    min-width: 110px;
+    background-color: blueviolet;
+    color:white;
+    font-size: 18px;
+    border: 0;
+    text-align: center;
+    font-weight: 20px;
+}
+
+.btnMenu:hover{
+    background-color: white;
+    color: blueviolet;
+}
+
+@media only screen and (max-width:1215px){
+    .navContainer{
+        position: relative;
+        position: sticky;
+        top:0px;
+        width: 100%;
+    }
+    .headingText{
+        display: none;
+    }
+    .navRight{
+        position: absolute;
+        flex-direction: column;
+        height: 700px;
+        width: 300px;
+        float: left;
+        top:60px;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        visibility: hidden;
+    }
+
+    .navLeft{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .hamMenu{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .navRight{
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
+        float: left;
+        top:60px;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        visibility: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .navRight{
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
+        float: left;
+        top:60px;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        visibility: hidden;
+    }
+    
+}
